@@ -1,0 +1,51 @@
+.__user_info {
+  width: 200px;
+  background-color: var(--lightest-color);
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  z-index: 1003;
+  border-radius: 8px;
+  padding: 10px;
+
+  .__greetings {
+    & span {
+      text-transform: capitalize;
+    }
+  }
+
+  .__menu {
+    margin-top: 10px;
+    & p {
+      cursor: pointer;
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: var(--brightest-color);
+      }
+      & img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .__log_out {
+    margin-top: 30px;
+    & p {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: var(--brightest-color);
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    top: 120px !important;
+    right: 30px !important;
+  }
+}

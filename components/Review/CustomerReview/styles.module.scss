@@ -1,0 +1,48 @@
+.__customer_review {
+  border: solid 2px var(--light-color);
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 650px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .__user_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .__profile {
+      & img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    & p {
+      font-weight: bolder;
+    }
+  }
+  .__title {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    & p {
+      margin-left: 10px;
+    }
+    > div {
+      margin: 0;
+    }
+  }
+  .__content {
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 1200px) {
+    min-width: 100%;
+  }
+}
+.__active {
+  color: #ffa41c;
+}
+
+.__off {
+  color: gray;
+}

@@ -1,0 +1,52 @@
+.__counter {
+  width: 120px;
+  height: 48px;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & div {
+    display: flex;
+    & p {
+      width: 40px;
+    }
+    & button {
+      width: 40px;
+      border: none;
+      &:hover {
+        border: solid 1px var(--brightest-color);
+      }
+    }
+
+    .__counter {
+      font-family: "Manrope", sans-serif;
+      font-style: 13px;
+      color: var(--darkest-color) !important;
+      opacity: 1 !important;
+    }
+    .__prev_btn,
+    .__next_btn {
+      cursor: pointer;
+      opacity: 0.25 !important;
+      color: var(--dark-color) !important;
+      &:hover {
+        color: var(--brightest-color) !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+.__is_small {
+  width: 96px;
+  height: 32px;
+  font-size: 13px;
+  & p {
+    width: 32px !important;
+    height: 32px;
+  }
+  & button {
+    width: 32px !important;
+    height: 32px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "/api/hello": "pages/api/hello.js",
+  "/checkout": "pages/checkout.js",
+  "/": "pages/index.js",
+  "/order-confirmation": "pages/order-confirmation.js",
+  "/user-settings": "pages/user-settings.js",
+  "/_app": "pages/_app.js",
+  "/category/[category]": "pages/category/[category].js",
+  "/product/[id]": "pages/product/[id].js",
+  "/_error": "pages/_error.js",
+  "/create-review/[id]": "pages/create-review/[id].js",
+  "/_document": "pages/_document.js"
+}

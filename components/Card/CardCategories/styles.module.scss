@@ -1,0 +1,36 @@
+.__card {
+  width: 350px;
+  height: 205px;
+  background-color: var(--light-color);
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--dark-color);
+  .__photo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -60px;
+    object-fit: cover;
+  }
+
+  .__content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 1200px) {
+    width: 223px;
+    height: 217px;
+    .__content {
+      > div {
+        padding: 10px 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 327px;
+  }
+}
